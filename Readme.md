@@ -10,6 +10,7 @@ See the blog post at [blog.otoro.net](http://blog.otoro.net/2015/03/28/neural-sl
 
 ## The mod
 [Currently here](Henry-E.github.io)
+
 Whenever the ball is within a certain distance of the player the AI takes back control of the slime. It then hands back control automatically to the player after the ball exceeds that distance.
 
 Changes were also made to the opposing AI. Rather than updating the information given to the opposing AI every frame, this only happens whenever the frame number is prime relative to 2 and 3. Simply restricting the updates to every N frames wasn't sufficient to induce interesting mistakes.
