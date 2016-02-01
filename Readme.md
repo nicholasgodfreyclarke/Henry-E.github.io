@@ -9,7 +9,7 @@ See the blog post at [blog.otoro.net](http://blog.otoro.net/2015/03/28/neural-sl
 - [Neural Slime Volleyball](http://otoro.net/slimevolley)
 
 ## The mod
-[Currently here](Henry-E.github.io)
+[Currently here](henry-e.github.io)
 
 Whenever the ball is within a certain distance of the player the AI takes back control of the slime. It then hands back control automatically to the player after the ball exceeds that distance.
 
