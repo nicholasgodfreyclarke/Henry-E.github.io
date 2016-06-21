@@ -2,26 +2,37 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Word2Vec with friends</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <style>
+    #game {
+        display: table;
+        margin: 0 auto;
+    }
+    </style>  
   </head>
   <body>
 
     <div class="container">
+        <div id='game'>
+            <h1>Codename Word2Vec</h1>
+            <button type="button" class="btn btn-primary numberOfWordsButton">2 words</button>'
+            <button type="button" class="btn btn-primary numberOfWordsButton">4 words</button>'
+            <button type="button" class="btn btn-primary numberOfWordsButton">6 words</button>'
+            <h2 id="clue"></h2>
+            <div id='buttonDiv'>
+            </div>
+            <h2 id="gameOutcome" style="visibility:hidden"><h2>
+            <input type="button" class="btn btn-primary" style="visibility:hidden" id="playAgainButton" value="Play again?">
 
-        <h1>Codename Word2Vec</h1>
-        <h2 id="clue"></h2>
-
-        <button type="button" class="btn btn-primary choiceButton" id="button1" style="width:200px">1</button>
-        <button type="button" class="btn btn-primary choiceButton" id="button2" style="width:200px">2</button>
-        <br><br>
-        <button type="button" class="btn btn-primary choiceButton" id="button3" style="width:200px">3</button>
-        <button type="button" class="btn btn-primary choiceButton" id="button4" style="width:200px">4</button>
-
-        <h2 id="gameOutcome" style="visibility:hidden"><h2>
-
-        <input type="button" class="btn btn-primary" style="visibility:hidden" onclick="location.href='';" id="playAgainButton" value="Play again?">
-
+            <br>
+            <br>
+            <p id="winPercentage"><p>
+            <p><font size="5">How to play:</font><br>
+            <font size="4">Choose the words that are closest to the clue in word2vec space.<font><br>
+            To win: get half the words correct consecutively.</font></p>
+        <div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
